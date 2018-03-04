@@ -9,12 +9,12 @@ int main()
 	scanf("%d",&k);
 	for(i=0;i<k;i++)
 	{
-	    temp=a[0];
-    for(j=0;j<n;j++)
-	{
-	   a[j]=a[j+1];
+	    temp=a[n-1];
+        for(j=n-2;j>=0;j--)
+ 	{
+	   a[j+1]=a[j];
 	}
-	    a[n-1]=temp;
+	    a[0]=temp;
 	   
 	} printf("%s",a);
 	return 0;
