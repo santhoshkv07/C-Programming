@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int n,a[n],b[n],k=0,i,j,temp=0;
+    int n,a[n],b[n],k=0,i,j,temp=0,count=0;
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
@@ -17,6 +17,7 @@ int main()
 	    {
 	    if(a[i]==a[j])
 	    {
+	        count=1;
 	        b[k]=a[i];
 	        k++;
 	        a[j]='+';
@@ -35,6 +36,10 @@ int main()
 	        }
 	    }
 	    printf("%d ",b[i]);
+	}
+	if(count!=1)
+	{
+	    printf("unique");
 	}
 	return 0;
 }
