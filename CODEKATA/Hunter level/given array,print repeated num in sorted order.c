@@ -18,9 +18,7 @@ int main()
 	            a[j]=temp;
 	        }
 	    }
-	    printf("%d ",a[i]);
 	}
-	printf("\n");
 	for(i=0;i<n-1;i++)
 	{
 	    count=0;
@@ -35,10 +33,9 @@ int main()
 	    if(count==1)
 	    {
 	       b[k]=a[i];
-	       printf("%d ",b[k]);
 	       k++;
 	    }
-	}printf("\n");
+	}
     if(k!=0)
     {
         for(i=0;i<k;i++)
