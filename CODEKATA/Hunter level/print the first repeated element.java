@@ -3,7 +3,7 @@ class main
 {
 	public static void main(String[] args)
 	{
-		int n,i,j,x=0;
+		int n,i,j,x=0,count=0;
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
 		int a[]=new int[n];
@@ -17,11 +17,19 @@ class main
 		{
 			if(a[i]==a[j])
 			{
+			    count++;
                 x=a[i];
                 break;
 			}
 		}break;
 		}
-	    System.out.println(x);
+		if(count==0)
+		{
+		    System.out.println("Unique");
+		}
+	    else
+		{
+	        System.out.println(x);
+		}
 }	
 }
