@@ -7,8 +7,7 @@ public class Sumofprimes {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		int count=0;
-		int flag=0;
+		int count=0,count1=0;
 		for(int i=1;i<n;i++)
 		{
 			count=0;
@@ -36,14 +35,14 @@ public class Sumofprimes {
 					}
 					if(count==2 || j==1 && count==1)
 					{
-						flag++;
+						count1++;
 						System.out.print(i+" "+j+" ");
 						System.out.println();
 					}
 				}
 			}
 		}
-		System.out.print(flag);
+		System.out.print(count1);
 		sc.close();
 	}
 }
