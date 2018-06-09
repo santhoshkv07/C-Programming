@@ -9,6 +9,7 @@ public class Smallestlargestdiff {
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
 		int a[]=new int[n];
+		
 		int max=0,min=999,x=0,y=0,diff=0;
 		for(int i=0;i<n;i++)
 		{
@@ -28,7 +29,7 @@ public class Smallestlargestdiff {
 			}
 		}
 		diff=y-x;
-		System.out.print(diff);
+		System.out.print(Math.abs(diff));
 		sc.close();
 	}
 }
