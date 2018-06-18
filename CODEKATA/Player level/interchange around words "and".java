@@ -1,5 +1,6 @@
 package javastrings.java;
 
+import java.util.Arrays;
 import java.util.Scanner;
 public class Substringand 
 {	
@@ -20,14 +21,8 @@ public class Substringand
 				str[i-1]=temp;
 			}
 		}
-		for(int i=0;i<str.length;i++)
-		{
-			System.out.print(str[i]+" ");
-		}
-		/*StringBuffer sb=new StringBuffer();
-		sb.append(str);
-		String str1=sb.toString();
-		System.out.print(str1); */
+		String str1=Arrays.toString(str).replace(",","").replace("[","").replace("]","").trim();
+		System.out.print(str1);
 	}
 	public static void main(String[] args)
 	{
