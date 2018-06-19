@@ -24,9 +24,10 @@ public class Maxnumformed {
 					num[j]=t;
 				}
 			}
-			System.out.print(num[i]);
+			//System.out.print(num[i]);
 		}
-		//System.out.print(Arrays.toString(num).replaceAll(',',""));
+		String str=Arrays.toString(num).replace(",","").replace(" ","").replace("[","").replace("]","");
+		System.out.print(str);
 		sc.close();
 	}
 }
