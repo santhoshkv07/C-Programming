@@ -12,6 +12,11 @@ public class Lowerbound
 			//System.out.print(a[0]+" "+(l+1)+" "+(r+1)+" "+a[l]+" "+a[r]);
 			return new int[] {a[0],1};
 		}
+		else if(l==0 && r==0 && a[0]>k)
+		{
+			System.out.println("no lowerbound element present");
+			return new int[] {0,0};
+		}
 		int mid=l+(r-l)/2;
 		if(l<=r)
 		{
@@ -34,6 +39,11 @@ public class Lowerbound
 		{
 			//System.out.print(a[0]+" "+(l+1)+" "+(r+1)+" "+a[l]+" "+a[r]);
 			return new int[] {a[0],1};
+		}
+		else if(l==0 && r==0 && a[0]<k)
+		{
+			System.out.println("no upperbound element present");
+			return new int[] {0,0};
 		}
 		int mid=l+(r-l)/2;
 		if(l<=r)
@@ -71,8 +81,22 @@ public class Lowerbound
 		Lowerbound ob=new Lowerbound();
 		int[] res=ob.funlwr(a,k,l,r);
 		int[] res1=ob.funupr(a,k,l,r);
-		System.out.println(res[0]+" is the lowerbound of "+k+" at position "+res[1]);
-		System.out.print(res1[0]+" is the upperbound of "+k+" at position "+res1[1]);
+		if(res[0]==0 &&res[1]==0)
+		{
+			
+		}
+		else
+		{
+			System.out.println(res[0]+" is the lowerbound of "+k+" at position "+res[1]);
+		}
+		if(res1[0]==0 && res1[1]==0)
+		{
+			
+		}
+		else
+		{
+			System.out.println(res1[0]+" is the upperbound of "+k+" at position "+res1[1]);
+		}
 		sc.close();
 	}
 }
