@@ -26,12 +26,12 @@ public class Alternatingsigns
 		int[] a=new int[n];
 		for(int i=0;i<n;i++)
 		{
-			a[i]=sc.nextInt();
+		     a[i]=sc.nextInt();
 		}
 		int[] res=longestsigns(a,n);
 		for(int i=0;i<n;i++)
 		{
-			System.out.print(res[i]+" ");
+		     System.out.print(res[i]+" ");
 		}
 		sc.close();
 	}
